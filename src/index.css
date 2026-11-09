@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  }
+}
+
+/* Custom scrollbars for coloring palette and page reels */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fef3c7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f59e0b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+
+/* Print media query for clean coloring page printing */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ColorSprout - Children's Coloring Book Generator",
+  "description": "Create personalized 5-page printable children's coloring books with custom covers, thick-line vector art, interactive coloring studio, and downloadable PDF.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
